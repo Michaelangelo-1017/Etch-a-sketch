@@ -38,8 +38,7 @@ function askForSquares(){
     let numberOfSquares;
     const numberRegex = /^[0-9]+$/
     while(isValid){
-        numberOfSquares = prompt("Enter the number of squares you want!");
-        
+        numberOfSquares = prompt("Enter the number of squares you want! (Maximum of 100 and no decimals)");
         if(numberRegex.test(numberOfSquares) && parseInt(numberOfSquares) <= 100){
             console.log(parseInt(numberOfSquares));
             isValid = false;
